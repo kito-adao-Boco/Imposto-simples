@@ -1,0 +1,17 @@
+public class ImpostoVeiculosPesados extends Imposto {
+    private int tonelagem;
+
+   
+    public ImpostoVeiculosPesados(int id, Cliente cliente, double valor, String dataPagamento, int tonelagem,String nome, String cpf, Endereco endereco, String telefone, String email) {
+        super(id, cliente, valor, dataPagamento);
+        this.tonelagem = tonelagem;
+    }
+
+    public int getTonelagem() {
+        return tonelagem;
+    }
+
+    public void setTonelagem(int tonelagem) {
+        this.tonelagem = tonelagem;
+    }
+}
